@@ -1,4 +1,5 @@
-"use strict";
+ "use strict";
+
 
 $(function(){
 
@@ -8,8 +9,8 @@ $(function(){
 	    });
 	};
 
-	// var textNodes = getTextNodesIn($("p, h1, h2, h3"));
-	var textNodes = getTextNodesIn($("*"));
+	var textNodes = getTextNodesIn($("p, h1, h2, h3, h4, h5, a, h4, h5, a, h4, h5, a, h4, h5, a"));
+//	var textNodes = getTextNodesIn($("*"));
 
 
 

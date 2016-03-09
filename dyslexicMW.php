@@ -36,10 +36,18 @@ $dir = dirname( __FILE__ ) . '/';
 # Internationalization
 $wgExtensionMessagesFiles['dyslexicMW'] = $dir . 'dyslexicMW.i18n.php';
 
+# The "class" file contains the bulk of a simple parser function extension. 
+$wgAutoloadClasses['dyslexicMW'] = $dir . 'dyslexicMW.class.php';
+
 $wgResourceModules['ext.dyslexicMW.base'] = array(
 	'scripts' => array( 'dyslexicMW.js', ),
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'dyslexicMW',
 	'position' => 'top',
 );
+
+/**
+ *  Use a hook to add resources
+ **/
+$wgHooks['BeforePageDisplay'][] = 'dyslexicMW::addResources';
 
