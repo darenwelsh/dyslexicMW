@@ -1,4 +1,8 @@
- "use strict";
+/*
+ * This script was written by geon: https://github.com/geon/geon.github.com/blob/master/_posts/2016-03-03-dsxyliea.md
+*/
+
+"use strict";
 
 
 $(function(){
