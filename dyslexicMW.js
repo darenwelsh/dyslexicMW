@@ -9,10 +9,10 @@ $(function(){
 	    });
 	};
 
-	var textNodes = getTextNodesIn($("p, h1, h2, h3, h4, h5, a, h4, h5, a, h4, h5, a, h4, h5, a"));
+//	var textNodes = getTextNodesIn($("p, h1, h2, h3, h4, h5, a, h4, h5, a, h4, h5, a, h4, h5, a"));
 //	var textNodes = getTextNodesIn($("*"));
 
-
+	var textNodes = getTextNodesIn($(".aprilfools"));
 
 	function isLetter(char) {
 		return /^[\d]$/.test(char);
@@ -101,6 +101,15 @@ $(function(){
 	}
 
 
-	setInterval(messUpWords, 50);
+	//setInterval(messUpWords, 50);
+	
+	document.onclick = function() {
+		setInterval(messUpWords, 50);
+	}
+
+	//setTimeout(function(){
+	//	setInterval(messUpWords, 50);
+	//}, 5000);
+
 });
 
